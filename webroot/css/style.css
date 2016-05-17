@@ -1,0 +1,837 @@
+/**
+ * General elements
+ */
+body {
+    color: #333;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+/**
+ * Layout of the main page elements
+ */
+.wrapper {
+
+}
+
+
+/**
+ * Layout for header
+ */
+.header {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.sitetitle {
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.sitetitle img {
+    width: 150px;
+    vertical-align: middle;
+}
+
+.sitelogo {
+    width: 35px;
+    padding: 8px 4.5px 0 4.5px;
+    display: inline-block;
+}
+
+.siteslogan {
+  position: absolute;
+  top: 65px;
+  left: 130px;
+  font-style: italic;
+  color: #666;
+}
+
+.searchbox {
+    float: right;
+    display: inline-block;
+}
+
+.search-form {
+
+}
+
+.search-input {
+    font-size: 1em;
+    padding: 5px;
+    height: 100%;
+    border: none;
+    background: url(../img/searchicon.png) no-repeat scroll 190px 6px;
+    background-size: 20px 20px;
+    background-color: #f2f2f2;
+    border-radius: 1px;
+}
+
+.login {
+    display: inline-block;
+    position: absolute;
+    right: 300px;
+    height: 100%;
+}
+
+.login a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #6D7378;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    top: 14px;
+    letter-spacing: 4px;
+}
+
+.login a:hover {
+    color: #aaa;
+}
+
+.navbar {
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: #1A1F1D;
+    overflow: hidden;
+    line-height: 70px;
+    height: 70px;
+}
+
+.navbar nav {
+    display: inline-block;
+}
+
+.navbar li {
+    height: 70px;
+    line-height: 70px;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.navbar li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #6D7378;
+    text-decoration: none;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #1A1F1D;
+    transition: border-bottom 0.3s ease 0s;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #aaa;
+}
+
+.navbar .selected {
+    color: #F2F2F2;
+    border-bottom: 2px solid #aaa;
+}
+
+
+/**
+ * Layout for main
+ */
+.main {
+    min-height: 30em;
+    background-color: #f2f2f2;
+}
+
+/* Genres view */
+
+.genres {
+    text-align: center;
+    font: bold 14px/35px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    box-shadow: 0 0 4px 1px rgba(21, 28, 29, 0.6);
+}
+
+.oneGenre {
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.oneGenre a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.oneGenre a:hover {
+    text-decoration: underline;
+}
+
+/* Latest movies */
+
+.moviesContainer {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.latestHead {
+    padding: 10px 0 10px 130px;
+}
+
+.latestHead h1 {
+    margin: 0;
+    border-bottom: 0;
+    font-size: 1.5em;
+}
+
+.arrowDown {
+    color: blue;
+}
+
+.newMovies, .popMovies {
+    padding-top: 30px;
+    text-align: left;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.newMovies h2, .popMovies h2 {
+    max-width: 200px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.newMovie, .popMovie {
+    width: 80%;
+    vertical-align: top;
+    background-color: #fff;
+    margin: 0.5%;
+    display: inline-block;
+    text-align: left;
+}
+
+.popLeft {
+    float: left;
+    width: 50%;
+}
+
+.popRight {
+    float: right;
+    width: 50%;
+}
+
+.info  {
+
+}
+
+.newMovie img:hover, .popMovie a:hover {
+    opacity: 0.9;
+}
+
+.titleYear {
+
+}
+
+.titleYear a {
+    color: white;
+    font: bold 14px/35px Helvetica, Sans-Serif;
+    letter-spacing: 1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.playIcon {
+    display: inline-block;
+    position: relative;
+    right: 230px;
+    bottom: 80px;
+}
+
+.playIcon img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* New blogs */
+
+.newBlogs {
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.newBlogs h2 {
+    padding: 5px;
+    margin: 0;
+}
+
+.newBlog {
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    margin: 0.5%;
+    max-width: 350px;
+    min-height: 145px;
+    position: relative;
+}
+
+.blogHeader {
+    padding: 10px 5px;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+.blogTitle {
+    width: 75%;
+    text-align: left;
+    display: inline-block;
+}
+
+.blogTitle a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.blogTitle a:hover {
+    text-decoration: underline;
+}
+
+.blogDefault, .blogNews, .blogSerie, .blogFilm {
+    padding: 2px 10px 2px 0;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.blogDefault a, .blogNews a, .blogSerie a, .blogFilm a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    background-color: #7D93F5;
+    padding: 5px;
+}
+
+.blogDefault a {
+    background-color: #EB8D3B;
+}
+
+.blogNews a {
+    background-color: #99A6E0;
+}
+
+.blogFilm a {
+    background-color: #D4A190;
+}
+
+.blogSerie a {
+    background-color: #A1D490;
+}
+
+.blogData {
+    text-align: left;
+    padding: 10px;
+}
+
+.blogData a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.blogData a:hover {
+    text-decoration: underline;
+}
+
+.blogPub {
+    width: 80%;
+    border-top: 1px solid #ddd;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+.articleMain {
+  width: 70%;
+  padding-right: 1em;
+}
+
+/* Movies.php */
+
+.searchField {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    background-color: #bbb;
+    box-shadow: 0 0 4px 1px rgba(21, 28, 29, 0.6);
+}
+
+.search-box {
+    min-width: 400px;
+    height: 30px;
+}
+
+/*.year-box {
+
+}*/
+
+.search-button {
+    height: 30px;
+}
+
+.searchField a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.searchField a:hover {
+    text-decoration: underline;
+}
+
+.searchGenre {
+    text-align: center;
+}
+
+.searchGenre a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.searchGenre a:hover {
+    color: #111;
+}
+
+.hitsPerPage {
+    padding: 20px;
+    text-align: center;
+}
+
+.movielistWrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sort-by {
+    text-align: center;
+}
+
+.sort-by a {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.sort-by span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.sort-head {
+    padding-left: 20px;
+}
+
+.movieRow {
+    min-height: 126px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.movieImg {
+    display: inline-block;
+    min-width: 76px;
+}
+
+.movie-content {
+    display: inline-block;
+    width: 80%;
+    height: 90%;
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.left-mov {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    margin-left: 20px;
+}
+
+/*.movieTitle {
+
+}*/
+
+.movieTitle a {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+.moviePlot {
+    max-width: 400px;
+    font-size: 0.9em;
+}
+
+.moviePlot a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.moviePlot a:hover {
+    text-decoration: underline;
+}
+
+.right-mov {
+    display: inline-block;
+    position: absolute;
+    left: 750px;
+}
+
+.opt-head {
+    width: 80px;
+    text-align: right;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/*.movieGenre,
+.movieYear,
+.moviePrice {
+
+}*/
+
+.opt-desc, .opt-desc a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #777;
+    padding-left: 2px;
+    text-align: left;
+}
+
+.opt-desc a:hover {
+    color: #333;
+}
+
+.pageNav {
+    text-align: center;
+}
+
+/* Individual movies */
+
+.oneWrap {
+    width: 100%;
+    text-align: center;
+}
+
+.oneTitle {
+    font-style: normal;
+}
+
+.one-left {
+    width: 70%;
+    display: inline-block;
+}
+
+.onePlot {
+    padding: 10px;
+}
+
+.oneYear, .oneGenres, .oneDirector, .oneLength {
+    padding-left: 10px;
+}
+
+.oneYoutube, .oneIMDB {
+    display: inline-block;
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+.one-left img {
+    width: 40px;
+}
+
+.oneImg img {
+    width: 800px;
+    height: 400px;
+}
+
+/* blog.php */
+
+.blog-header a {
+    color: #111;
+}
+
+.blog-wrapper {
+    margin: 5px;
+}
+
+.one-blog {
+    margin: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.blog-title {
+    display: inline-block;
+}
+
+.blog-title a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.blog-title a:hover {
+    text-decoration: underline;
+}
+
+.blog-data {
+    margin: 20px;
+}
+
+.blog-data a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-data a:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+.blog-pub {
+    font-size: 0.9em;
+    border-top: 1px solid #aaa;
+    margin-left: 20px;
+}
+
+.blog-return {
+    margin: 5px;
+}
+
+.blog-return a {
+    font-size: 1.7em;
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-return a:hover {
+    color: #000;
+}
+
+/* Media */
+
+@media (max-width:900px) {
+    .login {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .topbar {
+        margin-left: 0;
+    }
+
+    .searchbox {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        background-position: 95% 15px;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .navbar {
+        z-index: 400;
+        position: inherit;
+        width: auto;
+        text-align: center;
+    }
+
+    .navbar nav {
+        padding-top: 35px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .wrapper {
+        margin-left: 0;
+        position: inherit;
+    }
+
+    .blogPub {
+        position: inherit;
+    }
+}
+
+/* Style for dice */
+
+.gameRules {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.gameMenu {
+    margin: 5px;
+    padding: 10px;
+    float: left;
+}
+
+.gameMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.gameMenu li {
+    margin: 0;
+    padding: 5px;
+}
+
+.gameMenu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gameContent {
+    float: left;
+    width: 500px;
+    margin: 5px;
+}
+
+/* Login.php */
+
+.output {
+    margin-left: 10px;
+}
+
+
+/**
+ * Typography
+ */
+h1 {
+  border-bottom: 1px dashed #ccc;
+  padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**
+ * Layout for footer
+ */
+.footer {
+    height: 100px;
+    text-align: center;
+    background-color: #555;
+    padding-top: 15px;
+    border-top: 12px solid #ccc;
+    border-top: 12px solid rgba(1,1,1,0.3);
+}
+
+.sitefooter {
+    color: #000;
+}
+
+/**
+ * CSS sprite for a dice with six faces.
+ *
+ */
+ul.dice {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.dice li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 4px 0 0;
+  width: 32px;
+  height: 32px;
+  background: url('../img/dicefaces.jpg') no-repeat;
+}
+
+ul.dice .dice-1 { background-position: -160px 0; }
+ul.dice .dice-2 { background-position: -128px 0; }
+ul.dice .dice-3 { background-position:  -96px 0; }
+ul.dice .dice-4 { background-position:  -64px 0; }
+ul.dice .dice-5 { background-position:  -32px 0; }
+ul.dice .dice-6 { background-position:    0 0; }
+
+/**
+ * Style for source.php
+ */
+.src-breadcrumb,
+.src-filelist {
+  font-family: monospace;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 22px 0;
+}
+
+.src-breadcrumb li {
+  padding: 0;
+  display: inline;
+}
+
+.src-container {
+  min-width: 40em;
+}
+
+.src-header {
+  color: #000;
+  border: solid 1px #999;
+  border-bottom: 0;
+  background: #eee;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.src-rows {
+  float: left;
+  text-align: right;
+  color: #999;
+  border: solid 1px #999;
+  border-right: none;
+  background: #eee;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.src-rows a:link,
+.src-rows a:visited,
+.src-rows a:hover,
+.src-rows a:active  {
+  text-decoration: none;
+  color: inherit;
+}
+
+.src-code {
+  white-space: nowrap;
+  border: solid 1px #999;
+  background: #f9f9f9;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  overflow: auto;
+}

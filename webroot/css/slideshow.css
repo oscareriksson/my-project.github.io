@@ -1,0 +1,91 @@
+/**
+ * Style for JavaScript slideshow
+ *
+ */
+
+ /*.slideshowWrapper {
+ }*/
+
+.slideshow {
+    height: 204px;
+    display: inline-block;
+    width: 33.33%;
+    background: rgba(37, 47, 85, 1);
+    background: linear-gradient(#5368df, #080d2b);
+    box-shadow: 0 0 4px 1px rgba(21, 28, 29, 0.6);
+}
+
+.slideshowWrapper {
+    vertical-align: top;
+}
+
+.slideshow a {
+
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.slideshow img:hover {
+    opacity: 0.9;
+}
+
+.slideTitle {
+    position: absolute;
+    top: 200px;
+    vertical-align: top;
+}
+
+.slideTitle a {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.playSlide {
+    display: inline-block;
+}
+
+.playSlide img {
+    width: 50px;
+    opacity: 1;
+}
+
+.slideshowWrapper h2 {
+    position: absolute;
+    top: 60%;
+    z-index: 0;
+    font-size: 0.5em;
+}
+
+
+.slideshowWrapper h2 span {
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-size: 2.6vw;
+}
+
+@media (max-width:600px) {
+    .wrapper h2 {
+        top: 50%;
+    }
+
+    .wrapper h2 span {
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width:380px) {
+    .wrapper h2 {
+        display: none;
+    }
+}
